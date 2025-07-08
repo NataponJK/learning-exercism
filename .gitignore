@@ -1,4 +1,5 @@
 .exercism
 .editorconfig
+.vscode
 bin
 obj
