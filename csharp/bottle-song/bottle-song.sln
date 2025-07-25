@@ -1,0 +1,24 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.2.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BottleSong", "BottleSong.csproj", "{DB58A613-8492-022C-8086-F63C28204AE0}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DB58A613-8492-022C-8086-F63C28204AE0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DB58A613-8492-022C-8086-F63C28204AE0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DB58A613-8492-022C-8086-F63C28204AE0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DB58A613-8492-022C-8086-F63C28204AE0}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {5D65DA94-DD8E-4CDC-A2BE-B7D9B4A4EDE8}
+	EndGlobalSection
+EndGlobal
