@@ -35,28 +35,21 @@ public static class House
     private static string BuildVerse(int verseNumber)
     {
         int i = verseNumber - 1;
-        var sb = new StringBuilder("This is ");
-        if (i == 0) return sb.Append(_subjects[0]).ToString();
 
-        sb.Append(_subjects[i]).Append(' ');
+        if (i == 0) return $"This is {_subjects[0]}";
+        string verse = $"This is {_subjects[i]} ";
+
         for (int j = i; j >= 1; j--)
         {
-            sb.Append(_verbs[j]);
-            if (j == 1) sb.Append(_subjects[0]);
-            else sb.Append(_subjects[j - 1]).Append(' ');
+            if (j == 1) verse += $"{_verbs[j]}{_subjects[0]}";
+            else verse += $"{_verbs[j]}{_subjects[j - 1]} ";
         }
-        return sb.ToString();
+        return verse;
     }
     public static string Recite(int verseNumber)
     => Recite(verseNumber, verseNumber);
     public static string Recite(int startVerse, int endVerse)
-    {
-        var sb = new StringBuilder();
-        for (int i = startVerse; i <= endVerse; i++)
-        {
-            sb.Append(BuildVerse(i) + "\n");
-        }
-        sb.Length--;
-        return sb.ToString();
-    }
+    => string.Join("\n", Enumerable
+                        .Range(startVerse, endVerse - startVerse + 1)
+                        .Select(i => BuildVerse(i)));
 }
