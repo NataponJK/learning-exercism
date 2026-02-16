@@ -3,3 +3,14 @@
 .vscode
 bin
 obj
+/node_modules
+/bin/configlet
+/bin/configlet.exe
+/package-lock.json
+/yarn.lock
+.gitignore
+.yarn
+.pnp.cjs
+.pnp.loader.mjs
+yarn.lock
+pnpm-lock.yaml
